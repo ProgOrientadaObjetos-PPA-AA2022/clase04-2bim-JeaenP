@@ -9,6 +9,39 @@ package paquete02;
  *
  * @author reroes
  */
-public class Automovil {
+public abstract class Automovil {
+    protected String nombresPropietario;
+    protected String placa;
+    protected double valorCancelar;
+
+    public String getNombresPropietario() {
+        return nombresPropietario;
+    }
+
+    public Automovil(String nombresPropietario, String placa) {
+        this.nombresPropietario = nombresPropietario;
+        this.placa = placa;
+    }
+
+    public void setNombresPropietario(String nombresPropietario) {
+        this.nombresPropietario = nombresPropietario;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public double getValorCancelar() {
+        return valorCancelar;
+    }
+
+    public abstract void calcularValorCancelar();
+    
+    
+    
     
 }
